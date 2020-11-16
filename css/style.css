@@ -6,9 +6,16 @@ body {
 .main-logo {
     border: solid 4px skyblue;
     border-radius: 50%;
-    /* float: center; */
+    float: left;
     width:50px;
     height:50px;
     margin: 0 auto;
     
 }
+
+/* Flexbox */
+/* .container { */
+    display: flex;
+    height: 300px;
+}
+
