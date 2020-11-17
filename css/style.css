@@ -1,21 +1,40 @@
 body {
     font-family: "Chalkduster", fantasy;
-
+    background-color: #4a0308;
+    color: #FFF;
 }
 
 .main-logo {
-    border: solid 4px skyblue;
+    border: solid 4px black;
     border-radius: 50%;
     float: left;
     width:50px;
     height:50px;
-    margin: 0 auto;
+    margin: 0px auto;
+    
     
 }
 
+.main-header {
+    display: block;
+    /* border: solid 4px gray; */
+    /* border-radius: 5%; */
+    /* background-color: rgb(141, 5, 5); */
+    margin: 10px 5px;
+    text-align: center;
+}
+
+.link {
+    color: #FFF;
+}
+.link:hover {
+    color: #ac0d0d;
+}
+
 /* Flexbox */
-/* .container { */
+
+/* .container {
     display: flex;
     height: 300px;
-}
+} */
 
