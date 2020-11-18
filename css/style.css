@@ -124,11 +124,20 @@ Media Queries
     
     .benz {
         float: left;
-        width: 80%;
+        width: 50%;
+        padding-top: 5px;
+        padding-right: 5px;
     }
     
     .snake {
         float:right;
         width: 50%;
+    }
+
+    .bird {
+        /* align-content: center; */
+        float: right;
+        max-width: 70%;
+        
     }
 }
