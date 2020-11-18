@@ -1,9 +1,21 @@
+/*============================================
+Base Element Styles
+==============================================*/
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: "Chalkduster", fantasy;
     background-color: #4a0308;
     color: #FFF;
+    
 }
 
+/*============================================
+Base Layout Styles
+==============================================*/
+
+/* ---- Layout Containers---- */
 .main-logo {
     border: solid 4px black;
     border-radius: 50%;
@@ -11,17 +23,31 @@ body {
     width:50px;
     height:50px;
     margin: 0px auto;
-    
-    
 }
 
 .main-header {
     display: block;
     /* border: solid 4px gray; */
-    /* border-radius: 5%; */
-    /* background-color: rgb(141, 5, 5); */
-    margin: 10px 5px;
+    border-radius: 2%;
+    background-color: rgb(141, 5, 5);
+    padding: 5px;
+    margin: 15px 10px;
     text-align: center;
+}
+
+.name a,
+.main-nav a {
+    padding: 15px 15px;
+}
+
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+    /* text-align: center; */
+}
+
+section {
+    margin-top: 6em;
 }
 
 .link {
@@ -31,10 +57,78 @@ body {
     color: #ac0d0d;
 }
 
-/* Flexbox */
+/* .name, */
+.main-nav li {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bird {
+    /* align-content: center; */
+    width: 50%;
+    
+}
+
+
+
+/* ----Flexbox---- */
 
 /* .container {
     display: flex;
     height: 300px;
 } */
 
+/*============================================
+Media Queries
+==============================================*/
+
+@media (min-width: 769px) {
+    /* .wrap {
+    min-height: calc(100vh-89px);
+    } */
+    .container {
+        width: 70%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .name,
+    .main-nav,
+    .main-nav li {
+        display: inline-block;
+        
+    }
+
+    .name {
+        width: 240px;
+        margin-right: 100px;
+    }
+
+    .main-logo {
+        width: 125px;
+        height: 125px;
+        margin-top: 20px;
+    }
+
+    /* img {
+        max-width: 60%;
+        height: auto;
+    } */
+
+    
+    
+    .benz {
+        float: left;
+        width: 80%;
+    }
+    
+    .snake {
+        float:right;
+        width: 50%;
+    }
+}
