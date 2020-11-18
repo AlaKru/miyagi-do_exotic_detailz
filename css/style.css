@@ -74,6 +74,16 @@ img {
     
 }
 
+.main-footer {
+    display: block;
+    border: solid 4px gray;
+    border-radius: 2%;
+    background-color: darkgray;
+    padding: 5px;
+    margin: 15px 10px;
+    text-align: center;
+}
+
 
 
 /* ----Flexbox---- */
