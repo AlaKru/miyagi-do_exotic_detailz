@@ -8,7 +8,12 @@ body {
     font-family: "Chalkduster", fantasy;
     background-color: #4a0308;
     color: #FFF;
+    /* font-size: small; */
     
+}
+
+p, h2 {
+    /* font-size: large; */
 }
 
 /*============================================
@@ -37,7 +42,7 @@ Base Layout Styles
 
 .name a,
 .main-nav a {
-    padding: 15px 15px;
+    padding: 5px 50px;
 }
 
 .container {
@@ -84,20 +89,41 @@ img {
     text-align: center;
 }
 
+.name {
+    text-shadow: 4px 4px rgb(70, 70, 70);
+}
+
+.motto {
+    text-shadow: 0 0 5px rgb(70, 70, 70), 0 0 8px black;
+}
+
+/* .employee {
+    width: 150px;
+    height: 150px;
+} */
 
 
 /* ----Flexbox---- */
 
-/* .container {
+.main-nav li {
     display: flex;
-    height: 300px;
-} */
+    flex-direction: column;
+}
+
+@media all and (min-width: 640px) {
+    .main-nav li {
+        flex-direction: row;
+        justify-content: center;
+        ;
+    }
+}
 
 /*============================================
 Media Queries
 ==============================================*/
 
-@media (min-width: 769px) {
+@media (min-width: 769px),
+       only-screen and (min-width: 700px) and (orientation: landscape) {
     /* .wrap {
     min-height: calc(100vh-89px);
     } */
@@ -137,11 +163,14 @@ Media Queries
         width: 50%;
         padding-top: 5px;
         padding-right: 5px;
+        padding-bottom: 5px;
     }
     
     .snake {
         float:right;
         width: 50%;
+        padding-left: 5px;
+        
     }
 
     .bird {
@@ -149,5 +178,16 @@ Media Queries
         float: right;
         max-width: 70%;
         
+    }
+
+    /* body {
+        font-size: large;
+    } */
+}
+
+@media (min-width: 1080px) {
+    .snake {
+        max-height: 550px;
+        padding-bottom:100px;
     }
 }
