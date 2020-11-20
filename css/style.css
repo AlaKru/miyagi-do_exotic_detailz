@@ -119,6 +119,52 @@ img {
 }
 
 /*============================================
+Contact Us Styles
+==============================================*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color:  #ac0d0d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #fff;
+    color: black;
+  }
+
+  .container2 {
+    border-radius: 5px;
+    background-color: darkgray;
+    padding: 10px;
+  }
+
+  .column {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*============================================
 Media Queries
 ==============================================*/
 
@@ -191,3 +237,10 @@ Media Queries
         padding-bottom:100px;
     }
 }
+
+@media screen and (min-width: 600px) {
+    .column, input[type=submit] {
+      width: 50%;
+      margin-top: 0;
+    }
+  }
